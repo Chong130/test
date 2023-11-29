@@ -1,0 +1,693 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+body {
+	font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", Osaka, "ＭＳ Ｐゴシック", "MS PGothic" , sans-serif;
+	color:#222;
+	font-size:14px;
+	line-height:1.9;
+	letter-spacing:0.03em;
+	text-align:justify;
+	background: #e61874;
+}
+a {
+	color: #e61874;
+	text-decoration: none;
+	transition:0.3s ease-in-out;
+}
+a:hover {
+	color:#FFF;
+}
+
+::selection{ background-color:#e61874; }
+::-moz-selection{ background-color:#e61874; }
+
+
+
+/*=======================================================================
+
+	背景cover用css
+
+=======================================================================*/
+html,body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	min-width: 1280px;
+}
+
+
+/*=======================================================================
+
+	リンク時アニメーション
+
+=======================================================================*/
+dl dd a{
+	position: relative;
+	display: flex;
+	width: 160px;
+	line-height: 2;
+}
+dl dd a span{
+  color: #FFF;
+  z-index: 10;
+}
+dl dd a span:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  display: block;
+  background: #e61874;
+  z-index: -1;
+  transition: .2s;
+}
+dl dd a span:hover{
+  color: #111;
+}
+dl dd a span:hover:before{
+  width: 100%;
+}
+
+
+
+/*=======================================================================
+
+	#main　＊　フルスクリーンキャッチコピー　＊　MV表示前
+
+=======================================================================*/
+#catchMV {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 105%;
+	min-height: 750px;
+	background: #000;
+	z-index: 4;
+}
+#catchMV img {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	width: 288px;
+	height: 211px;
+	margin: auto;
+}
+
+
+/*=======================================================================
+
+	#main　＊　フルスクリーンMV
+
+=======================================================================*/
+#main {
+	position: relative;
+	width: 100%;
+	height: 105%;
+	min-height: 750px;
+	z-index: 5;
+	overflow: hidden;
+}
+#main .inner {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 83%;
+	height: 100%;
+	max-width: 1600px;
+	overflow: hidden;
+}
+#main .inner .main_img {
+	width: 100%;
+	height: 100%;
+	background:url(../images/MV_bg01.jpg) center no-repeat;
+	background-size: cover;
+}
+@media screen and (max-width:1600px) {
+	#main .inner {
+		width: 100%;
+	}
+}
+
+/*------------------------------ 上下 ------------------------------*/
+#main #main_topcover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9;
+}
+#main #main_bottomcover {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 9;
+}
+#main #main_bottomcatch {
+	position: absolute;
+	bottom: 80px;
+	right: 50px;
+	z-index: 9;
+}
+@media screen and (max-width:1600px) {
+	#main #rev-1 {
+		left: -320px;
+	}
+}
+@media screen and (max-width:640px) {	
+	#main #main_bottomcatch {
+		bottom: 80px;
+		right: auto;
+		left: 5%;
+	}
+}
+
+/*------------------------------ イラスト内キャッチコピー ------------------------------*/
+#main .inner #rev-2b {
+	position: absolute;
+	top: 50%;
+	margin-top: -300px;
+	left: 40px;
+	z-index: 9;
+}
+@media screen and (max-width:1600px) {
+	#main .inner #rev-2b {
+		margin-top: -450px;
+		left: 50%;
+		margin-left: 100px;
+	}
+}
+@media screen and (max-width:640px) {
+	#main .inner #rev-2b {
+		top: 5%;
+		margin: 0;
+		left: auto;
+		right: 5%;
+	}
+}
+
+/*------------------------------ 左コンテンツ ------------------------------*/
+#main #main_Leftbox {
+	background: #e61874;
+	width: 100%;
+}
+#main #main_Leftbox #rev-2  {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 6%;
+	width: 102px;
+	height: 502px;
+	margin: auto;
+	z-index: 9;
+}
+#main #main_Leftbox #rev-2cover  {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 5.52%;
+	width: 102px;
+	height: 502px;
+	margin: auto;
+}
+@media screen and (max-width:1600px) {
+	#main #main_Leftbox {
+		display: none;
+	}
+}
+
+
+/*------------------------------ モーション ------------------------------*/
+#rev-1 {
+	overflow: hidden;
+}
+#rev-2 {
+	overflow: hidden;
+}
+#rev-2b {
+	overflow: hidden;
+}
+@media screen and (max-width:640px) {
+}
+
+
+
+
+/*=======================================================================
+
+	#youtube
+
+=======================================================================*/
+#movie {
+	position: relative;
+	width: 100%;
+	background: #000;
+	padding: 100px 0;
+	box-sizing: border-box;
+	border-bottom: 50px solid #e61874;
+	border-right: 50px solid #e61874;
+}
+#movie::after {
+	position: absolute;
+	content: "";
+	right: -30px;
+	top: 50%;
+	margin-top: -122px;
+	width: 8px;
+	height: 244px;
+	background: url(../images/section01_title.png);
+	background-size: 8px 244px;
+}
+#youtube  {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+}
+#youtube iframe {
+	width: 1200px;
+	height: 640px;
+}
+
+@media screen and (max-width:640px) {
+	#movie {
+		padding: 70px 0;
+		border-bottom: 0px;
+		border-right: 0px;
+	}
+	#movie::after { display: none;}
+	#youtube {
+	  width: 100%;
+	  aspect-ratio: 16 / 9;
+	}
+	#youtube iframe {
+	  width: 100%;
+	  height: 100%;
+	}
+}
+
+
+
+
+/*=======================================================================
+
+	#track list
+
+=======================================================================*/
+#tracklist {
+	position: relative;
+	width: 100%;
+	height: 1340px;
+	padding-top: 100px;
+	box-sizing: border-box;
+	background: url(../images/section02_bg02.png) no-repeat top right , 
+		url(../images/section02_bg03.png) no-repeat bottom left, #000;
+	background-size: 855px 1104px , 1920px 580px , auto;
+	border-left: 50px solid #e61874;
+	overflow: hidden;
+}
+#tracklist::after {
+	position: absolute;
+	content: "";
+	left: -30px;
+	top: 50%;
+	margin-top: -116px;
+	width: 9px;
+	height: 232px;
+	background: url(../images/section02_title.png);
+	background-size: 9px 232px;
+}
+
+@media screen and (max-width:640px) {
+	#tracklist {
+		height: 1110px;
+		padding-top: 100px;
+		background: url(../images/section02_bg02.png) no-repeat top right , 
+			url(../images/section02_bg03.png) no-repeat bottom left, #000;
+		background-size: 855px 1104px , 1920px 580px , auto;
+		border-left: 0px;
+	}
+	#tracklist::after {display: none;}
+}
+
+/*------------------------------ Title ------------------------------*/
+#tracklist h2 {
+	position: absolute;
+	top: -10px;
+	left: 0;
+	z-index: 9;
+}
+@media screen and (max-width:1400px) {
+	#tracklist h2 {
+	left: -70px;
+	}
+}
+@media screen and (max-width:640px) {
+	#tracklist h2 {
+	left: -10px;
+		top: -30px;
+	}
+}
+
+
+/*------------------------------ CDジャケット ------------------------------*/
+#tracklist .tracklist_cd {
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	margin-left: -10px;
+	z-index: 99;
+}
+#tracklist .tracklist_cd_shadow {
+	position: absolute;
+	top: 760px;
+	left: 50%;
+	margin-left: 10px;
+}
+@media screen and (max-width:640px) {
+	#tracklist .tracklist_cd {
+		top: 60px;
+		left: 0;
+		right: 0;
+		margin: auto;
+		width: 360px;
+	}
+	#tracklist .tracklist_cd_shadow {display: none;}
+}
+
+/*------------------------------ List ------------------------------*/
+#tracklist_list {
+	position: relative;
+	width: 1280px;
+	margin: auto;
+	margin-top: 360px;
+}
+#tracklist_list li {
+	margin-bottom: 25px;
+}
+
+@media screen and (max-width:640px) {
+	#tracklist_list {
+		width: 100%;
+		margin-top: 380px;
+	}
+}
+
+
+/*------------------------------ モーション ------------------------------*/
+#rev-3 {
+	overflow: hidden;
+}
+#rev-4 {
+	overflow: hidden;
+}
+#rev-5 {
+	overflow: hidden;
+}
+#rev-6 {
+	overflow: hidden;
+}
+#rev-7 {
+	overflow: hidden;
+}
+#rev-8 {
+	overflow: hidden;
+}
+
+
+
+/*=======================================================================
+
+	#information
+
+=======================================================================*/
+#information {
+	position: relative;
+	height: 920px;
+	background: linear-gradient(180deg, #e61874 0%, #e61874 50%, #000 50%, #000 100%);
+	overflow: hidden;
+}
+#information::before {
+	position: absolute;
+	content: "";
+	left: 20px;
+	top: 50%;
+	margin-top: -116px;
+	width: 8px;
+	height: 253px;
+	background: url(../images/section03_title01.png);
+	background-size: 8px 253px;
+}
+#information::after {
+	position: absolute;
+	content: "";
+	right: 20px;
+	top: 50%;
+	margin-top: -116px;
+	width: 9px;
+	height: 226px;
+	background: url(../images/section03_title02.png);
+	background-size: 9px 226px;
+}
+
+@media screen and (max-width:640px) {
+	#information { height: auto;}
+	#information::before { display: none;}
+	#information::after { display: none;}
+}
+
+
+
+#information .inner {
+	position: relative;
+	width: calc( 100% - 100px ) ;
+	margin-left: 50px;
+	display: flex;
+}
+@media screen and (max-width:640px) {
+	#information .inner {
+		width: calc( 100% - 20px ) ;
+		margin-left: 10px;
+		display: block;
+	}
+}
+	
+
+/*------------------------------ 左 ------------------------------*/
+#information_Left {
+	position: relative;
+	width: 50%;
+	height: 780px;
+	box-sizing: border-box;
+	background: url(../images/section03_bg01.jpg) right bottom;
+	margin-top: 120px;
+	padding-top: 130px;
+}
+#information_Left dl {
+	position: absolute;
+	right: 6%;
+	width: 500px;
+	color: #FFF;
+}
+#information_Left dt {
+  	float:left;
+  	clear:left;
+  	width:110px;
+	font-family: 'Crimson Text', serif;
+	margin-bottom: 25px;
+}
+#information_Left dd {
+  	float:left;
+  	width:390px;
+	font-family: 'Noto Serif JP', serif;
+	margin-bottom: 25px;
+}
+#information_Left dd a {
+	float: left;
+}
+#information_Left #banner {
+	position: absolute;
+	bottom: 100px;
+	right: 6%;
+	width: 500px;
+}
+
+@media screen and (max-width:640px) {
+	#information_Left {
+		width: 100%;
+		height: 410px;
+		margin-top: 0;
+		padding-top: 40px;
+		font-size: 12px;
+	}
+	#information_Left dl {
+		position: relative;
+		right: auto;
+		width: 90%;
+		margin: auto;
+	}
+	#information_Left dt {
+		float:left;
+		clear:left;
+		width:90px;
+		font-family: 'Crimson Text', serif;
+		margin-bottom: 5px;
+	}
+	#information_Left dd {
+		float:left;
+		width:250px;
+		font-family: 'Noto Serif JP', serif;
+		margin-bottom: 15px;
+	}
+	#information_Left dd a {
+		float: none;
+	}
+	#information_Left #banner {display: none;}
+}
+
+/*------------------------------ 右 ------------------------------*/
+#information_Right {
+	position: relative;
+	width: 50%;
+	background: url(../images/section03_bg02.jpg) left bottom;
+	height: 900px;
+	box-sizing: border-box;
+	padding-top: 130px;
+}
+#information_Right dl {
+	position: absolute;
+	left: 8%;
+	width: 500px;
+	color: #FFF;
+	line-height: 3;
+}
+#information_Right dt {
+  	float:left;
+  	clear:left;
+  	width:270px;
+	font-family: 'Crimson Text', serif;
+	margin-bottom: 5px;
+}
+#information_Right dd {
+  	float:left;
+  	width:150px;
+	font-family: 'Noto Serif JP', serif;
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width:640px) {
+	#information_Right {
+		width: 100%;
+		height: 460px;
+		padding-top: 40px;
+	}
+	#information_Right dl {
+		position: relative;
+		left: auto;
+		width: 90%;
+		margin: auto;
+		line-height: 2;
+		font-size: 12px;
+	}
+	#information_Right dt {
+		float:left;
+		clear:left;
+		width:210px;
+		font-family: 'Crimson Text', serif;
+		margin-bottom: 5px;
+	}
+	#information_Right dd {
+		float:left;
+		width:120px;
+		font-family: 'Noto Serif JP', serif;
+		margin-bottom: 5px;
+	}
+}
+
+
+
+
+
+/*=======================================================================
+
+	#footer
+
+=======================================================================*/
+#footer {
+	position:relative;
+	height: 540px;
+	border-top: 50px solid #000;
+	background: url(../images/footer_bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+}
+#rev-9 {
+	top: -80px;
+	overflow: hidden;
+	z-index: 99;
+}
+#footer_bottomcover {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+}
+
+@media screen and (max-width:640px) {
+	#footer {
+		height: 240px;
+	}
+	#rev-9 {display: none;}
+}
+
+
+
+
+/*=======================================================================
+
+	#apology　＊　ここから10/23追加　＊
+
+=======================================================================*/
+#apology {
+	position: relative;
+	background: #000;
+	color: #FFF;
+	font-family: 'Noto Serif JP', serif;
+	overflow: hidden;
+}
+#apology .inner {
+	width: 95%;
+	margin: auto;
+	padding-top: 40px;
+	text-align: center;
+	font-size: 12px;
+}
+#apology .inner p {
+	margin-bottom: 10px;
+}
+#apology .inner dt {
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+@media screen and (max-width:640px) {
+	#apology .inner {
+		font-size: 10px;
+	}
+	#apology .inner dt {
+		font-size: 13px;
+	}
+}
+html,body {
+	max-width: 1920px;
+	margin: auto;
+}
+
+
+
+
+
