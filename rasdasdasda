@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+
+<title>Counterfeit ｜ 藍月なくる 7th ALBUM</title>
+<meta name="viewport" content="width=device-width,user-scalable=yes">
+
+<!-- サイト設定 ---->
+<meta name="keywords"            content="Counterfeit,藍月なくる,あいつきなくる" /> 
+<meta name="description"         content="私が私である事すら許されないのならば。その偽物ごと、盲目的に愛して。藍月なくるが贈る「Counterfeit」。第一展示場　P-15。" />
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:site"        content="@NakuruAitsuki" />
+<meta name="twitter:creator"     content="@NakuruAitsuki" />
+<meta name="twitter:title"       content="藍月なくる 7th ALBUM「Counterfeit」2022M3 P-15" />
+<meta name="twitter:description" content="私が私である事すら許されないのならば。その偽物ごと、盲目的に愛して。藍月なくるが贈る「Counterfeit」。第一展示場　P-15。" />
+<meta name="twitter:image:src"   content="https://nakuruaitsuki.com/counterfeit/images/card.jpg" />
+<meta property="og:title"        content="藍月なくる 7th ALBUM「Counterfeit」2022M3 P-15" />
+<meta property="og:url"          content="https://nakuruaitsuki.com/counterfeit" />
+<meta property="og:image"        content="https://nakuruaitsuki.com/counterfeit/images/card.jpg" />
+<meta property="og:site_name"    content="Counterfeit" />
+<meta property="og:description"  content="私が私である事すら許されないのならば。その偽物ごと、盲目的に愛して。藍月なくるが贈る「Counterfeit」特設サイト" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://nakuruaitsuki.com/counterfeit/images/appletouch.png">
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+<!--[if lt IE 9]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<!-- cssの設定 -->
+<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/sp_common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="css/sp.css" media="all" />
+
+<!-- web font -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Noto+Serif+JP:wght@400&display=swap" rel="stylesheet">
+
+<!-- jQの設定 -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/demo.css" />
+<link rel="stylesheet" type="text/css" href="css/revealer.css" />
+<script>document.documentElement.className = 'js';</script>
+<script type="text/javascript" src="js/wow.js"></script>
+<script type="text/javascript">new WOW().init();</script>
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<script type="text/javascript">
+	$(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+	$('.main_img').css({transform: 'scale('+(100 + scroll/40)/100+')',top: -(scroll/50)  + "%",});
+    });
+</script>
+
+</head>
+<body class="loading">
+	
+	
+
+
+<!--▼▼▼　フルスクリーンキャッチコピー　▼▼▼-->
+<div id="catchMV" class="wow fadeIn" data-wow-delay="2.0s">
+
+	<p class="wow fadeIn" data-wow-delay="3.0s"><img src="images/catchMV.png" width="288"></p>
+	
+</div>
+<!--▲▲▲　フルスクリーンキャッチコピー　▲▲▲-->		
+
+
+
+
+
+<!--▼▼▼　フルスクリーンMV　▼▼▼-->
+<section id="main" class="wow fadeIn" data-wow-delay="3.0s">
+	
+	
+	<!--上下飾り-->
+	<div id="main_topcover" class="wow fadeInDownBig" data-wow-delay="3.8s"><img src="images/MV_bg02.png" width="1762"></div>
+	<div id="main_bottomcover" class="wow fadeInUpBig" data-wow-delay="3.9s"><img src="images/MV_bg03.png" width="1651"></div>
+	<div id="main_bottomcatch" class="wow fadeInUpBig" data-wow-delay="3.9s"><img src="images/MV_catch05.png" width="260"></div>
+	
+	
+	
+	<div class="inner wow fadeIn" data-wow-delay="6.2s">
+		<div id="rev-2b"><img src="images/MV_catch04.png" width="113"></div>
+		<div class="main_img"></div>
+	</div>
+	
+	<div id="main_Leftbox" class="wow fadeIn" data-wow-delay="5.0s">
+		<div id="rev-1"><img src="images/MV_catch03.png" width="320"></div>
+		<div id="rev-2"><img src="images/MV_catch01.png" width="94"></div>
+		<div id="rev-2cover" class="wow fadeIn" data-wow-delay="9.0s"><img src="images/MV_catch02.png"></div>
+	</div>
+	
+	
+</section>
+<!--▲▲▲　フルスクリーンMV　▲▲▲-->		
+											
+											
+											
+												
+													
+															
+												
+	
+
+<!--▼▼▼　youtube　▼▼▼-->
+<section id="movie">
+
+	<div id="youtube">
+		<iframe width="1200" height="640" src="https://www.youtube.com/embed/mNSjTCTltyE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	
+</section>
+<!--▲▲▲　youtube　▲▲▲-->
+											
+												
+													
+															
+												
+	
+
+<!--▼▼▼　Track list　▼▼▼-->
+<section id="tracklist">
+
+	<h2><img src="images/section02_bg01.png" width="987"></h2>
+	
+	<div class="tracklist_cd wow zoomInRight" data-wow-delay="1.5s">
+		<img src="images/section02_img01.png" width="681">
+	</div>
+	<div class="tracklist_cd_shadow wow fadeInUpBig" data-wow-delay="1.5s">
+		<img src="images/section02_img02.png" width="661">
+	</div>
+	
+	<ul id="tracklist_list">
+		<li id="rev-3"><img src="images/section02_list01.png" width="640"></li>
+		<li id="rev-4"><img src="images/section02_list02.png" width="640"></li>
+		<li id="rev-5"><img src="images/section02_list03.png" width="640"></li>
+		<li id="rev-6"><img src="images/section02_list04.png" width="640"></li>
+		<li id="rev-7"><img src="images/section02_list05.png" width="640"></li>
+		<li id="rev-8"><img src="images/section02_list06.png" width="640"></li>
+	</ul>
+	
+</section>
+<!--▲▲▲　Track list　▲▲▲-->
+											
+												
+													
+															
+												
+	
+
+<!--▼▼▼　Information　▼▼▼-->
+<section id="information">
+<div class="inner">
+
+
+	<div id="information_Left" class="wow fadeIn" data-wow-delay="1.0s">
+		<dl>
+			<dt>ABOUT</dt>
+			<dd>藍月なくる New Album "Counterfeit"</dd>
+			<dt>SPEC</dt>
+			<dd>プレスCD / 8Pフルカラー / ジュエルケース</dd>
+			<dt>NUMBER</dt>
+			<dd>NRCD-07</dd>
+			<dt>RELEASE</dt>
+			<dd>2022/10/30 M3秋 東京流通センター 第一展示場P-15 a,b</dd>
+			<dt>SONGS</dt>
+			<dd>全6曲</dd>
+			<dt>CIRCLE</dt>
+			<dd>クラリムステラ</dd>
+			<dt>PRICE</dt>
+			<dd>event：1,500yen / shop：2,500yen</dd>
+			<dt>SHOP</dt>
+			<dd>
+			<a href="https://www.melonbooks.co.jp/detail/detail.php?product_id=1671908" target="_blank"><span>メロンブックス</span></a>
+			<a href="https://diverse.direct/クラリムステラ/nrcd-07/" target="_blank"><span>DIVERSE DIRECT</span></a>
+			</dd>
+		</dl>
+		<div id="banner"><img src="images/banner.png" width="500"></div>
+	</div>
+
+
+	<div id="information_Right" class="wow fadeIn" data-wow-delay="1.5s">
+		<dl>
+			<dt>Compose</dt>
+			<dd>Akki<br>Osanzi<br>K's<br>Tansa<br>samayuzame<br>Feryquitous</dd>
+			<dt>Mastering / Vocal MIX(Tr.2.4.5.6)</dt>
+			<dd>Dios/シグナルP</dd>
+			<dt>Lyric(Tr.3)	</dt>
+			<dd>らっぷびと</dd>
+			<dt>Lyric(Tr.4)</dt>
+			<dd>棗いつき</dd>
+			<dt>Jacket＆SD Illust</dt>
+			<dd>シエラ</dd>
+			<dt>Design</dt>
+			<dd>レク</dd>
+			<dt>XFD Movie</dt>
+			<dd>みや。</dd>
+			<dt>Special Site</dt>
+			<dd>来宮りお</dd>
+			<dt>Produce / Vocal</dt>
+			<dd>藍月なくる</dd>
+		</dl>
+	</div>
+
+</div>
+</section>
+<!--▲▲▲　Information　▲▲▲-->
+
+
+
+<!--▼▼▼　Apology　▼▼▼-->									
+<section id="apology">
+	<dl class="inner">
+		<dt>■ ブックレット誤植のお詫びと訂正 ■</dt>
+		<dd>
+			<p>作詞をご担当いただきました棗いつき様のクレジット表記に誤植がございました<br>
+			深くお詫び申し上げますとともに、下記の通り訂正させていただきます</p>
+			<p>Lyric(Tr.6)：棗いつき　→Lyric(Tr.4)：棗いつき<br>
+			※Tr.6の作詞はFeryquitous様がご担当されております</p>
+		</dd>
+	</dl>
+</section>
+<!--▲▲▲　Apology　▲▲▲-->
+
+
+
+<!--▼▼▼　Footer　▼▼▼-->
+<section id="footer">
+	<p id="footer_bottomcover" class="wow fadeInUpBig"><img src="images/footer_img01.png" width="1516"></p>
+	<p id="rev-9"><img src="images/footer_img02.png" width="957"></p>
+</section>
+<!--▲▲▲　Footer　▲▲▲-->
+
+
+
+
+
+<!-- jQの設定 -->
+<script src="js/anime.min.js"></script>
+<script src="js/scrollMonitor.js"></script>
+<script src="js/main.js"></script>
+<script src="js/revealer.js"></script>
+
+</body>
+</html>
