@@ -33,13 +33,9 @@ function startConnect(){
 function onConnect(){
     // topic =  document.getElementById("topic_s").value;
     topic =  "testtopic/userpw";
-    
-
     // document.getElementById("messages").innerHTML += "<span> Subscribing to topic "+topic + "</span><br>";
-
     // console.log(topic)
     client.subscribe(topic);
-
 }
 
 
@@ -59,18 +55,15 @@ function onMessageArrived(message){
 function startDisconnect(){
     client.disconnect();
     // document.getElementById("messages").innerHTML += "<span> Disconnected. </span><br>";
-
-
-
-
 }
 
 function publishMessage(){
 username = document.getElementById("username").value;
 password = document.getElementById("password").value;
-    msg = username.concat(password);
+join = username.concat("||");
+msg = join.concat(password);
 // topic = document.getElementById("topic_p").value;
-    topic =  "testtopic/userpw";
+topic =  "testtopic/userpw";
 
 Message = new Paho.MQTT.Message(msg);
 Message.destinationName = topic;
