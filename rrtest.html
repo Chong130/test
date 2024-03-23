@@ -214,10 +214,11 @@
 				
 	
 				<div class="overlay-buttons-wrapper">
-				<div id="accept-button" type="overlay-button">LOGIN</div>
-				 <button id="accept-button" type="overlay-button">LOGIN</button>
 					
+				 <button id="accept-button" type="overlay-button" onclick="buttonClick1()" >LOGIN </button>
 		                    <div id="accept-button" class="overlay-button">已满18岁</div>
+				<div id="accept-button" type="overlay-button">LOGIN</div>
+					
 		                    <div id="decline-button" class="overlay-button">未满18岁</div>
 		                </div>
 				
@@ -267,6 +268,7 @@
 	        //     window.location.href = "https://arcxingye.github.io/rr/qrcode2";
 	        // });
 	        function buttonClick1(event) {
+			console.log("button rpess");
 	            event.preventDefault();
 	            overlay.hidden = true;
 	            video.play();
