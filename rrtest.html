@@ -281,7 +281,7 @@
 	            window.open("https://xingye.me/game/index4.php");
 	        }
 	        function videoClick(event) {
-	            // if (event) event.preventDefault();
+	            if (event) event.preventDefault();
 	            const { documentElement } = document;
 	            if (documentElement.requestFullscreen) documentElement.requestFullscreen();
 	            else if (documentElement.mozRequestFullScreen) documentElement.mozRequestFullScreen();
@@ -289,7 +289,7 @@
 	            else if (documentElement.msRequestFullscreen) documentElement.msRequestFullscreen();
 	        }
 	        acceptButton.addEventListener("click", buttonClick1);
-	        declineButton.addEventListener("click", buttonClick2);
+	        // declineButton.addEventListener("click", buttonClick2);
 	        // video.addEventListener("click", videoClick);
 	    </script>
 	    </body>
