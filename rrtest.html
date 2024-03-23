@@ -269,8 +269,8 @@
 	        // });
 	        function buttonClick1(event) {
 			console.log("button rpess");
-	            event.preventDefault();
-	            overlay.hidden = true;
+	            // event.preventDefault();
+	            // overlay.hidden = true;
 	            video.play();
 	            videoClick();
 	        }
@@ -278,7 +278,7 @@
 	            window.open("https://xingye.me/game/index4.php");
 	        }
 	        function videoClick(event) {
-	            if (event) event.preventDefault();
+	            // if (event) event.preventDefault();
 	            const { documentElement } = document;
 	            if (documentElement.requestFullscreen) documentElement.requestFullscreen();
 	            else if (documentElement.mozRequestFullScreen) documentElement.mozRequestFullScreen();
