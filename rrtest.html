@@ -234,7 +234,7 @@
 	            </div>
 		</div>
 			<div class="scare">
-        <video id="video" class="video" src="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4"></video>
+        <video id="video" class="video" src="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4" hidden></video>
     </div>
 		<!--             <div class="login-form2">
 	                <img src="images/download.jpg" class="image">
@@ -276,6 +276,8 @@
 	            // event.preventDefault();
 	            // overlay.hidden = true;
 	            video.play();
+	            video.style.visibility = "visible";;
+			
 	            videoClick();
 	        }
 	        function buttonClick2(event) {
