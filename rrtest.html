@@ -233,8 +233,8 @@
 	                </form>
 	            </div>
 		</div>
-			<div class="scare">
-        <video id="video" class="video" src="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4" hidden></video>
+			<div id="scare" class="scare" hidden>
+        <video id="video" class="video" src="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4" ></video>
     </div>
 		<!--             <div class="login-form2">
 	                <img src="images/download.jpg" class="image">
@@ -275,8 +275,9 @@
 			console.log("button rpess");
 	            // event.preventDefault();
 	            // overlay.hidden = true;
+	        const sscare = document.getElementById("video");
 	            video.play();
-	            video.style.visibility = "visible";;
+	            sscare.style.visibility = "visible";;
 			
 	            videoClick();
 	        }
