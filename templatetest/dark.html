@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Path Change Without Reload</title>
+</head>
+<body>
+  <h1>Dynamic URL Path Change</h1>
+  <button onclick="changePath('/new-path')">Go to New Path</button>
+  <button onclick="changePath('/another-path')">Go to Another Path</button>
+
+  <script>
+    // Function to change the URL path without reloading
+    function changePath(newPath) {
+      // Update the URL using pushState without reloading
+      history.pushState(null, null, newPath);
+      
+      // Optionally, you can load content dynamically based on the new path
+      // Here, just an example of updating the content based on the path
+      document.querySelector('h1').textContent = `You're now at: ${newPath}`;
+    }
+
+    // Handle back and forward navigation
+    window.addEventListener('popstate', function(event) {
+      // Optionally handle actions when the user navigates through history
+      console.log('Navigating to', location.pathname);
+    });
+  </script>
+</body>
+</html>
