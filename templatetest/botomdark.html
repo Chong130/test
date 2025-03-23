@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template Switcher</title>
+  <style id="template-style">
+    /* Default Template */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    /* Top half static */
+    .top-half {
+      flex: 1;
+      background-color: #f0f0f0;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    /* Bottom half, which will change */
+    .bottom-half {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Default style for the button */
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .default-button {
+      display: block;
+    }
+
+    .dark-button {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-half">
+    <h1>Template Switcher</h1>
+  </div>
+  
+  <div class="bottom-half">
+    <div class="container">
+      <button class="default-button" onclick="switchTemplate('dark')">Switch to Dark Template</button>
+      <button class="dark-button" onclick="switchTemplate('default')">Switch to Default Template</button>
+    </div>
+  </div>
+
+  <script>
+    function switchTemplate(template) {
+      const bottomHalf = document.querySelector('.bottom-half');
+      const defaultButton = document.querySelector('.default-button');
+      const darkButton = document.querySelector('.dark-button');
+
+      if (template === 'dark') {
+        // Apply dark template to the bottom half
+        bottomHalf.style.backgroundColor = '#2d2d2d';
+        defaultButton.style.display = 'none';
+        darkButton.style.display = 'block';
+      } else {
+        // Revert back to default template
+        bottomHalf.style.backgroundColor = '#f0f0f0';
+        defaultButton.style.display = 'block';
+        darkButton.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
